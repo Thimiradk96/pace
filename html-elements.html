@@ -1,0 +1,118 @@
+<html>
+   <head>
+       <link rel="stylesheet" type="text/css" href="style1.css"/>
+   <title>Student Registration</title>
+       
+    </head>
+    <body>
+   <h1>Quick Registration Form</h1>
+   <h4>
+   please fill out this form..we will contact you later.
+   </h4>
+        
+    <form action="" method="get">
+        <fieldset>
+            <legend>Info</legend>
+    <table>
+        <tr>
+          <td><lable for="Name">Name</lable></td>
+            <td><input type="text" id="Name" name="Name"></td>
+        </tr>
+        <tr>
+    <td><lable for="topics" name="Topics"></lable></td>
+        <td>
+       <select id="topics" name="topics">
+           <option value="HTML">HTML</option>
+           <option value="CSS">CSS</option>
+           <option value="Javascript">Javascript</option>
+           <option value="PHP">PHP</option>
+        </select>
+        </td>
+            </tr>
+            <tr>
+        <td><lable for="Message">Message</lable></td>
+                <td>
+         <textarea id="message" name="message" rows="8" cols="70"></textarea>
+        </td>
+    </tr>
+        <tr>
+    
+   <td>Student</td>
+            <td>
+             <input type="radio" id="st_01" name="topicgroup" value="Ananda">
+             <lable for="st_01">Ananda</lable><br>
+             <input type="radio" id="st_02" name="topicgroup" value="Maleesha">
+             <lable for="st_02">Maleesha</lable><br>
+             <input type="radio" id="st_03" name="topicgroup" value="Thimira">
+             <lable for="st_03">Thimira</lable><br>
+             <input type="radio" id="st_04" name="topicgroup" value="Kanishkaran">
+             <lable for="st_04">Kanishkaran</lable><br>
+    </td>>
+</tr>
+        
+        <tr><td></td><td><hr></td></tr>
+        
+        <tr>
+            <td>Sport</td>
+            <td>
+                <input type="checkbox" id="sport1" name="sport1" value="cricket">
+                <label for="sport1"> cricket</label><br>
+                <input type="checkbox" id="sport2" name="sport2" value="soccer">
+                <label for="sport2"> Football</label><br>
+                <input type="checkbox" id="sport3" name="sport3" value="Rugby">
+                <label for="sport3">Rugby</label>
+                
+            </td>
+        </tr>
+        <tr>
+                
+           <td><lable for="registered">Date Registered</lable></td>
+            <td>
+                <input type="date" id="registered" name="registered">
+            </td>
+        </tr>
+        
+        <tr>
+          <td><label for="email">Email</label></td>
+        <td>
+            <input type="email" id="email" name="email">
+            </td>
+        </tr>
+        
+        <tr>
+          <td><label for="password">Password</label></td>
+        <td>
+            <input type="password" id="password" name="password">
+            </td>
+        </tr>
+        
+        <tr>
+          <td><label for="upload">upload CV</label></td>
+        <td>
+            <input type="file" id="upload" name="upload">
+            </td>
+        </tr>
+        
+        <tr>
+          <td><label for="age">Age</label></td>
+        <td>
+            <input type="number" id="age" name="age" min="13" max="19">
+            </td>
+        </tr>
+        
+        <tr>
+          <td><label for="arrange">Range Of Age</label></td>
+        <td>
+            <input type="range" id="arrange" name="arrange" min="13" max="19">
+            </td>
+        </tr>
+                
+ <tr><td></td><td><input type="submit" name="submit" value="submit"></td></tr>    
+       
+    </table>
+</fieldset>
+
+</form>
+            
+    </body>
+        </html>
