@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style2.css"/>
+        <title>Calculator</title>
+        <script>
+            function assignValue1(){
+                
+                document.forms[0].Result.value=parseInt(document.forms[0].Number1.value)+parseInt(document.forms[0].Number2.value);
+            }
+            function assignValue2(){
+                document.forms[0].Result.value=parseInt(document.forms[0].Number1.value)-parseInt(document.forms[0].Number2.value);
+            }
+              function assignValue3(){
+                document.forms[0].Result.value=parseInt(document.forms[0].Number1.value)*parseInt(document.forms[0].Number2.value);
+              }
+              function assignValue4(){
+                document.forms[0].Result.value=parseInt(document.forms[0].Number1.value)/parseInt(document.forms[0].Number2.value);
+             }
+        </script>
+        <h1>Sample Calculator</h1>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+        <table>
+            <tr>
+                <td><lable for="Number1">Number1</lable></td>
+                
+                <td><input type="text" id="Number1" name="Number1"></td>
+            </tr>
+            
+            <tr>
+                <td><lable for="Number2">Number2</lable></td>
+                
+                <td><input type="text" id="Number2" name="Number2"></td>
+            </tr>
+            
+            <tr>
+                <td><lable for="btn1"></lable></td>
+                
+                <td><input type="button" id="btn1" value="+" onclick="assignValue1();"></td>
+            
+            
+              
+                <td><lable for="btn2"></lable></td>
+                
+                <td><input type="button" id="btn2" value="-" onclick="assignValue2();"></td>
+            
+            
+              
+                <td><lable for="btn3"></lable></td>
+                
+                <td><input type="button" id="btn3" value="*" onclick="assignValue3();"></td>
+            
+            
+              
+                <td><lable for="btn4"></lable></td>
+                
+                <td><input type="button" id="btn4" value="/" onclick="assignValue4();"></td>
+            </tr>
+            
+            
+            <tr>
+                <td><lable for="Name">Result</lable></td>
+                
+                <td><input type="text" id="Result" name="Result"></td>
+            </tr>
+            
+        </table>
+            </fieldset>
+        </form>
+    </body>
+</html>
